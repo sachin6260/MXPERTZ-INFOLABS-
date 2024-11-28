@@ -1,0 +1,65 @@
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #34495e;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    color: #26a0da;
+}
+
+ 
+  
+
+.navbar .signout {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+.navbar .signout {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+    transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+    border-radius: 50px;
+   display: block;
+   border: none;
+ }
+
+ .navbar .signout:hover {
+   background-position: right center;  
+   color: #fff;
+   text-decoration: none;
+ }
+
+ 
+
+ @media (max-width: 768px) {
+    .navbar .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
